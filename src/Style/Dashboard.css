@@ -1,0 +1,29 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 7rem); 
+  padding: 1rem;
+}
+
+.welcome-box {
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px; 
+  text-align: center;
+}
+
+.welcome-box h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: #2e7d32;
+}
+
+.welcome-box p {
+  font-size: 1.1rem;
+  color: #455a64;
+}

@@ -1,0 +1,70 @@
+/* Form.css - Modern Form Styling */
+
+.custom-form-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color: #f8f9fc;
+    border-radius: 12px;
+}
+
+.custom-form-container label {
+    font-weight: 600;
+    color: #374151;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.custom-form-container input[type="text"],
+.custom-form-container textarea,
+.custom-form-container input[type="radio"] {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-form-container input[type="text"]:focus,
+.custom-form-container textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.radio-group {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.error-text {
+    color: #dc2626;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    grid-column: 1 / -1;
+    margin-top: 1rem;
+}
+
+.p-button {
+    font-size: 14px !important;
+    padding: 0.6rem 1.5rem !important;
+    border-radius: 8px !important;
+}

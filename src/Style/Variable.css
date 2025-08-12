@@ -1,0 +1,8 @@
+:root {
+  --custom-green: #009872;
+  --custom-green-light: rgba(0, 152, 114, 0.1);
+  --text-color-dark: #2f2f2f;
+  --menubar-height: 50px;
+  --sidebar-width: 180px;
+  --sidebar-collapsed-width: 60px;
+}

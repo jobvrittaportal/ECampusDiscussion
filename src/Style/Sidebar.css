@@ -1,0 +1,21 @@
+
+
+ :root {
+  --custom-green: #009872;
+}
+
+.active-sidebar-item {
+  background-color: var(--custom-green);
+  color: #fff !important;
+  border-radius: 6px;
+}
+
+.text-custom-green {
+  color: var(--custom-green) !important;
+}
+
+.hover\:bg-custom-green\/10:hover {
+  background-color: rgba(0, 152, 114, 0.1);
+}  
+
+
