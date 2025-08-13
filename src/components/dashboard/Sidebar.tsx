@@ -27,7 +27,7 @@ const Sidebar = ({ hasPermission, pageFeatures }: { hasPermission: (pageName: st
   const dashboardUrls = ["dashboard"];
   const masterUrls = ["company", "payrollCompany", "branch", "department", "document", "bankName", "industryType", "bloodGroup", "degree", "awardCategory", "jobProfile", "gender", "maritalStatus", "score", "shift", "relation", "reference", "leaveMast", "businessProcess", "holidayMast", "balanceLeave", "employeeStatus", "candidateMaster", "documentCategory", "trainingDocument"];
   const settingUrls = ["role", "user", "page", "setting"];
-  const projectUrls = ["project"];
+  const projectUrls = ["discussions"];
 
   const breadcrumb = [
     { path: '/dashboard', parent: 'Dashboard', label: 'Dashboard' },
@@ -55,14 +55,14 @@ const Sidebar = ({ hasPermission, pageFeatures }: { hasPermission: (pageName: st
   if (pageFeatures.some(page => (page.permission && settingUrls.includes(page.url ?? ''))))
     addMenuSection('Settings', 'pi pi-cog');
   if (pageFeatures.some(page => (page.permission && projectUrls.includes(page.url ?? ''))))
-    addMenuSection('Projects', 'pi pi-cog');
+    addMenuSection('Discussions', 'pi pi-cog');
 
   pageFeatures?.forEach(page => {
     if (page.permission && page.url !== "skip") {
       let category = 'Dashboard';
       if (masterUrls.includes(page.url ?? '')) category = 'Masters';
       else if (settingUrls.includes(page.url ?? '')) category = 'Settings';
-      else if (projectUrls.includes(page.url ?? '')) category = 'Projects';
+      else if (projectUrls.includes(page.url ?? '')) category = 'Discussions';
 
       breadcrumb.push({
         path: "/" + page.url,

@@ -62,7 +62,7 @@ import { UserMast } from "./components/userMast/UserMast";
 import { Page } from "./components/page";
 import { Role } from "./components/role";
 import Topbar from "./components/dashboard/Menubar";
-import { Project } from "./components/Project";
+import { Discussions } from "./components/discussion";
 
 
 function App() {
@@ -91,7 +91,7 @@ function App() {
               (<Route path="user" element={<UserMast hasPermission={hasPermission} />} />)
               <Route path="page" element={<Page hasPermission={hasPermission} />} />
               <Route path="role" element={<Role hasPermission={hasPermission} />} />
-              <Route path="project" element={<Project hasPermission={hasPermission} />} />
+              <Route path="discussions" element={<Discussions hasPermission={hasPermission} />} />
             </Routes>
           </div>
         </div>

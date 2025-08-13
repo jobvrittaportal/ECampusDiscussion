@@ -8,7 +8,7 @@ export interface IModal {
     singleData: IFormData
 }
 
-export const Project = ({ hasPermission }: { hasPermission: (pageName: string, featureName?: string) => boolean }) => {
+export const Discussions = ({ hasPermission }: { hasPermission: (pageName: string, featureName?: string) => boolean }) => {
 
     const [modal, setModal] = useState({ singleData: emptyFormData, open: false } as IModal);
     const [reload, setReload] = useState(false);
