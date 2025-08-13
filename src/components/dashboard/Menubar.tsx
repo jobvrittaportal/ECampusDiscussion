@@ -4,7 +4,7 @@ import { Dialog } from 'primereact/dialog';
 import { Button } from 'primereact/button';
 import { Password } from 'primereact/password';
 import { Toast } from 'primereact/toast';
-import hrms from '../../assets/images/Hr Lense logo.png';
+import hrms from '../../assets/images/decryptLogo.png';
 import '../../Style/Menubar.css';
 import { baseUrl } from '../../shared/Fetch';
 

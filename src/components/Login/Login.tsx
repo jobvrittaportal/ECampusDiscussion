@@ -7,7 +7,7 @@ import * as yup from "yup";
 import { useNavigate } from "react-router-dom";
 import { Toast } from 'primereact/toast';
 import { Fetch } from "../../shared/Fetch";
-import hrms from "../../assets/images/Hr Lense logo.png";
+import hrms from "../../assets/images/decryptLogo.png";
 import '../../Style/Login.css';
 
 interface Permission {
