@@ -9,8 +9,8 @@ const localConfig: IEnvironmentConfig = {
 };
 
 const stageConfig: IEnvironmentConfig = {
-    websiteUrl: "https://hrms-stg.jobvritta.com/",
-    baseUrl: "https://hrms-stg-api.jobvritta.com/api/"
+    websiteUrl: "https://discussion-stg.jobvritta.com/",
+    baseUrl: "https://discussion-stg.jobvritta.com/api/"
 };
 
 const productionConfig: IEnvironmentConfig = {
